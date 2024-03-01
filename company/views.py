@@ -7,7 +7,8 @@ from .serializers import CompanySerializer, CompanyJobsSerializer, JobsSerialize
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated,IsAuthenticatedOrReadOnly,IsAdminUser
 
-# Create your views here.
+
+
 from rest_framework.pagination import PageNumberPagination
 
 class CommentPagination(PageNumberPagination):
