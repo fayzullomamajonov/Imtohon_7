@@ -9,7 +9,6 @@ dj-rest-auth
 Django
 django-allauth
 django-cors-headers
-django-dotenv
 djangorestframework
 dotenv
 drf-yasg
