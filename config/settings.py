@@ -36,6 +36,7 @@ ALLOWED_HOSTS = ["*"]
 
 # Application definition
 SITE_ID = 1
+APPEND_SLASH = False
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -98,16 +99,16 @@ WSGI_APPLICATION = "config.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": BASE_DIR / "db.sqlite3",
-#     }
-# }
-
 DATABASES = {
-    'default': dj_database_url.parse(os.getenv('DATABASES')),
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
 }
+
+# DATABASES = {
+#     'default': dj_database_url.parse(os.getenv('DATABASES')),
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
